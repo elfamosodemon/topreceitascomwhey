@@ -1,4 +1,4 @@
-import heroBook from "@/assets/hero-book.jpg";
+import heroBook from "@/assets/hero-book.png";
 
 const HeroSection = () => (
   <section className="gradient-hero py-12 md:py-20 px-4">
