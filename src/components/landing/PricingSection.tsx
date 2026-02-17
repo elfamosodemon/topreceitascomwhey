@@ -1,4 +1,4 @@
-import { Check, Star } from "lucide-react";
+import { Check, Star, Gift, Users } from "lucide-react";
 
 const PricingSection = () => (
   <section id="precos" className="py-16 px-4 gradient-warm">
@@ -7,18 +7,25 @@ const PricingSection = () => (
         Escolha seu plano
       </h2>
       <div className="grid md:grid-cols-2 gap-6 items-start">
-        {/* Básico */}
+        {/* Essencial */}
         <div className="bg-card rounded-2xl p-8 shadow-card border border-border">
-          <h3 className="font-display font-bold text-2xl text-foreground mb-1">Plano Básico</h3>
-          <p className="text-muted-foreground text-sm mb-6">"Doce Fit com Whey"</p>
+          <h3 className="font-display font-bold text-2xl text-foreground mb-1">Plano Essencial</h3>
+          <p className="text-muted-foreground text-sm mb-6 italic">
+            "Pra quem quer bater a meta de proteína sem sofrer."
+          </p>
           <div className="mb-6">
             <span className="text-price-old line-through text-lg">R$ 97</span>
             <p className="text-5xl font-display font-extrabold text-price-new">R$ 18</p>
           </div>
           <ul className="space-y-3 mb-8">
-            {["200 receitas doces com whey", "Suporte por e-mail", "Acesso vitalício"].map((item) => (
-              <li key={item} className="flex items-center gap-2 text-sm text-foreground">
-                <Check className="w-5 h-5 text-accent flex-shrink-0" />
+            {[
+              "200 Receitas com Whey: O guia completo de doces e sobremesas",
+              "Macros Calculados: Saiba exatamente o que está comendo",
+              "Acesso Vitalício: O material é seu para sempre",
+              "Entrega no Zap e E-mail: Receba em segundos após o Pix",
+            ].map((item) => (
+              <li key={item} className="flex items-start gap-2 text-sm text-foreground">
+                <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                 {item}
               </li>
             ))}
@@ -32,30 +39,41 @@ const PricingSection = () => (
             COMPRAR AGORA
           </a>
         </div>
-        {/* Premium */}
+        {/* Combo Shape Gourmet */}
         <div className="bg-card rounded-2xl p-8 shadow-warm border-2 border-primary relative">
           <div className="absolute -top-4 left-1/2 -translate-x-1/2 gradient-hero text-primary-foreground text-xs font-bold px-4 py-1.5 rounded-full flex items-center gap-1">
-            <Star className="w-3.5 h-3.5" /> MAIS VENDIDO
+            <Star className="w-3.5 h-3.5" /> 95% ESCOLHEM ESTE
           </div>
-          <h3 className="font-display font-bold text-2xl text-foreground mb-1">Plano Premium</h3>
-          <p className="text-muted-foreground text-sm mb-6">"Doce Fit Premium"</p>
+          <h3 className="font-display font-bold text-2xl text-foreground mb-1">Combo Shape Gourmet</h3>
+          <p className="text-muted-foreground text-sm mb-6 italic">
+            "O protocolo completo para nunca mais errar na dieta."
+          </p>
           <div className="mb-6">
-            <span className="text-price-old line-through text-lg">R$ 197</span>
+            <span className="text-price-old line-through text-lg">R$ 287</span>
             <p className="text-5xl font-display font-extrabold text-price-new">R$ 29</p>
+            <p className="text-xs text-muted-foreground mt-1">Menos que um lanche do iFood</p>
           </div>
           <ul className="space-y-3 mb-8">
+            <li className="flex items-start gap-2 text-sm text-foreground font-semibold">
+              <Star className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+              Tudo do Plano Essencial
+            </li>
             {[
-              "TUDO do plano Básico",
-              "Todos os 4 Bônus inclusos",
-              "+30 receitas para Air Fryer",
-              "Sobremesas Internacionais",
-              "Suporte prioritário",
+              "+40 Receitas Salgadas com Whey (Pastinhas, quiches e crepiocas)",
+              "+35 Receitas de Pré e Pós-treino (Mais energia e pump)",
+              "Guia de Receitas para a Família (Até as crianças vão amar)",
+              "+30 Delícias Inéditas para Air Fryer",
+              "Sobremesas Proteicas Internacionais",
             ].map((item) => (
-              <li key={item} className="flex items-center gap-2 text-sm text-foreground">
-                <Check className="w-5 h-5 text-accent flex-shrink-0" />
+              <li key={item} className="flex items-start gap-2 text-sm text-foreground">
+                <Gift className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 {item}
               </li>
             ))}
+            <li className="flex items-start gap-2 text-sm text-foreground">
+              <Users className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+              Grupo VIP de Alunos: Troca de dicas e suporte exclusivo
+            </li>
           </ul>
           <a
             href="https://pay.kirvano.com/64b020d6-08bf-4edd-b4b5-dceec43cc1f5"
