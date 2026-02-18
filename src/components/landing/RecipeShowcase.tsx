@@ -8,10 +8,10 @@ import brigadeiroImg from "@/assets/brigadeiro.jpg";
 const recipes = [
   { name: "Brownie Proteico", kcal: 40, img: brownieImg },
   { name: "Bolo de Caneca", kcal: 70, img: mugCakeImg },
-  { name: "Pudim de Coco", kcal: 98, img: pudimImg },
+  { name: "Pudim de Chia e Coco", kcal: 98, img: pudimImg },
   { name: "Cookies Integrais", kcal: 13, img: cookiesImg },
   { name: "Bombom de Whey", kcal: 47, img: bombomImg },
-  { name: "Brigadeiro Proteico", kcal: 12, img: brigadeiroImg },
+  { name: "Barra Proteica de Whey", kcal: 12, img: brigadeiroImg },
 ];
 
 const RecipeShowcase = () => (
