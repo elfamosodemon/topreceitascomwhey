@@ -31,7 +31,7 @@ const PricingSection = () => (
             ))}
           </ul>
           <a
-            href="https://pay.kirvano.com/75b20320-1748-4edc-9d5a-3a6ab6a99817"
+            href="https://www.ggcheckout.com/checkout/v5/pUjybKogGwD3UpX1iQ9i"
             target="_blank"
             rel="noopener noreferrer"
             className="block text-center gradient-cta text-accent-foreground font-bold py-3 rounded-full glow-cta hover:glow-cta-hover transition-all duration-300"
@@ -76,7 +76,7 @@ const PricingSection = () => (
             </li>
           </ul>
           <a
-            href="https://pay.kirvano.com/64b020d6-08bf-4edd-b4b5-dceec43cc1f5"
+            href="https://www.ggcheckout.com/checkout/v5/yylOi2P7GKXl9ci6Anwz"
             target="_blank"
             rel="noopener noreferrer"
             className="block text-center gradient-cta text-accent-foreground font-bold py-3 rounded-full glow-cta hover:glow-cta-hover transition-all duration-300"
