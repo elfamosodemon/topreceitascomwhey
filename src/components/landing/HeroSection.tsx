@@ -19,20 +19,10 @@ const HeroSection = () => (
             R$ 18
           </p>
         </div>
-        <a
-          href="#precos"
-          className="inline-block text-accent-foreground font-bold text-lg md:text-xl px-10 py-4 rounded-full transition-all duration-300 animate-bounce-subtle"
-          style={{
-            background: 'linear-gradient(135deg, #10B981, #059669)',
-            boxShadow: '0 8px 25px rgba(16, 185, 129, 0.4)',
-          }}
-        >
-          QUERO AS RECEITAS
-        </a>
       </div>
 
-      {/* Hero image */}
-      <div className="flex-shrink-0 relative">
+      {/* Hero image + CTA below */}
+      <div className="flex-shrink-0 flex flex-col items-center gap-6">
         <div
           className="w-72 md:w-96 rounded-2xl overflow-hidden"
           style={{
@@ -45,6 +35,16 @@ const HeroSection = () => (
             className="w-full"
           />
         </div>
+        <a
+          href="#precos"
+          className="inline-block text-accent-foreground font-bold text-lg md:text-xl px-10 py-4 rounded-full transition-all duration-300 animate-bounce-subtle"
+          style={{
+            background: 'linear-gradient(135deg, #10B981, #059669)',
+            boxShadow: '0 8px 25px rgba(16, 185, 129, 0.4)',
+          }}
+        >
+          QUERO AS RECEITAS
+        </a>
       </div>
     </div>
   </section>
