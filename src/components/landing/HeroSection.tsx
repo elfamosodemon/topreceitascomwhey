@@ -1,4 +1,4 @@
-import heroBook from "@/assets/hero-book.png";
+import heroGirl from "@/assets/hero-girl.jpg";
 
 const HeroSection = () => (
   <section className="py-16 md:py-24 px-4" style={{ background: '#FFFBF0' }}>
@@ -31,18 +31,17 @@ const HeroSection = () => (
         </a>
       </div>
 
-      {/* Floating book mockup */}
+      {/* Hero image */}
       <div className="flex-shrink-0 relative">
         <div
-          className="w-64 md:w-80 rounded-2xl overflow-hidden"
+          className="w-72 md:w-96 rounded-2xl overflow-hidden"
           style={{
             boxShadow: '0 20px 60px rgba(0,0,0,0.15), 0 8px 20px rgba(0,0,0,0.1)',
-            transform: 'perspective(800px) rotateY(-5deg)',
           }}
         >
           <img
-            src={heroBook}
-            alt="Livro 200 Receitas Fit com Whey"
+            src={heroGirl}
+            alt="200 Receitas Fit com Whey - Livro e panquecas proteicas"
             className="w-full"
           />
         </div>
