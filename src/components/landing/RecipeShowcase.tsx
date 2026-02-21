@@ -44,7 +44,7 @@ const RecipeShowcase = () => (
       <div className="text-center mt-10">
         <p className="text-muted-foreground mb-4">...e muito mais!</p>
         <a
-          href="https://www.ggcheckout.com/checkout/v5/yylOi2P7GKXl9ci6Anwz"
+          href="#precos"
           className="inline-block gradient-cta text-accent-foreground font-bold text-lg px-8 py-3 rounded-full glow-cta hover:glow-cta-hover transition-all duration-300"
         >
           QUERO AS RECEITAS
