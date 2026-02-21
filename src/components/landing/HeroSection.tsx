@@ -36,7 +36,7 @@ const HeroSection = () => (
           />
         </div>
         <a
-          href="#precos"
+          href="https://www.ggcheckout.com/checkout/v5/yylOi2P7GKXl9ci6Anwz"
           className="inline-block text-accent-foreground font-bold text-lg md:text-xl px-10 py-4 rounded-full transition-all duration-300 animate-bounce-subtle"
           style={{
             background: 'linear-gradient(135deg, #10B981, #059669)',
