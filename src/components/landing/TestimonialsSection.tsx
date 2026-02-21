@@ -126,7 +126,7 @@ const TestimonialsSection = () => (
       </div>
       <div className="text-center mt-10">
         <a
-          href="https://www.ggcheckout.com/checkout/v5/yylOi2P7GKXl9ci6Anwz"
+          href="#precos"
           className="inline-block font-bold text-lg px-8 py-3 rounded-full text-accent-foreground transition-all duration-300"
           style={{
             background: "linear-gradient(135deg, #10B981, #059669)",
