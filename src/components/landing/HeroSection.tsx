@@ -1,33 +1,52 @@
 import heroBook from "@/assets/hero-book.png";
 
 const HeroSection = () => (
-  <section className="gradient-hero py-12 md:py-20 px-4">
-    <div className="max-w-4xl mx-auto text-center">
-      <h1 className="text-3xl md:text-5xl font-display font-extrabold text-primary-foreground leading-tight mb-4">
-        Doce Todo Dia, Shape Todo Ano:{" "}
-        <span className="block">200 Opções Fit com Whey que Matam a Vontade de Açúcar.</span>
-      </h1>
-      <p className="text-primary-foreground/90 text-lg md:text-xl mb-8 max-w-2xl mx-auto">
-        Doces saudáveis, saborosos e fáceis de fazer — sem abrir mão da dieta!
-      </p>
-      <img
-        src={heroBook}
-        alt="Livro 200 Receitas Fit com Whey"
-        className="w-64 md:w-80 mx-auto rounded-2xl shadow-warm mb-8"
-      />
-      <div className="mb-6">
-        <span className="text-primary-foreground/70 line-through text-lg">De R$ 97</span>
-        <span className="text-primary-foreground text-lg ml-2">por apenas</span>
-        <p className="text-5xl md:text-6xl font-display font-extrabold text-primary-foreground mt-1">
-          R$ 18
+  <section className="py-16 md:py-24 px-4" style={{ background: '#FFFBF0' }}>
+    <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-16">
+      {/* Text content */}
+      <div className="flex-1 text-center md:text-left">
+        <h1 className="text-3xl md:text-5xl font-display font-extrabold leading-tight mb-5" style={{ color: '#1A1A1A' }}>
+          Doce Todo Dia, Shape Todo Ano:{" "}
+          <span className="text-gradient-warm">200 Opções Fit com Whey</span> que Matam a Vontade de Açúcar.
+        </h1>
+        <p className="text-lg md:text-xl mb-8 max-w-xl" style={{ color: '#444' }}>
+          Doces saudáveis, saborosos e fáceis de fazer — sem abrir mão da dieta!
         </p>
+        <div className="mb-6">
+          <span className="line-through text-lg" style={{ color: '#999' }}>De R$ 97</span>
+          <span className="text-lg ml-2" style={{ color: '#1A1A1A' }}>por apenas</span>
+          <p className="text-5xl md:text-6xl font-display font-extrabold mt-1" style={{ color: '#1A1A1A' }}>
+            R$ 18
+          </p>
+        </div>
+        <a
+          href="#precos"
+          className="inline-block text-accent-foreground font-bold text-lg md:text-xl px-10 py-4 rounded-full transition-all duration-300 animate-bounce-subtle"
+          style={{
+            background: 'linear-gradient(135deg, #10B981, #059669)',
+            boxShadow: '0 8px 25px rgba(16, 185, 129, 0.4)',
+          }}
+        >
+          QUERO AS RECEITAS
+        </a>
       </div>
-      <a
-        href="#precos"
-        className="inline-block gradient-cta text-accent-foreground font-bold text-lg md:text-xl px-10 py-4 rounded-full glow-cta hover:glow-cta-hover transition-all duration-300 animate-bounce-subtle"
-      >
-        QUERO AS RECEITAS
-      </a>
+
+      {/* Floating book mockup */}
+      <div className="flex-shrink-0 relative">
+        <div
+          className="w-64 md:w-80 rounded-2xl overflow-hidden"
+          style={{
+            boxShadow: '0 20px 60px rgba(0,0,0,0.15), 0 8px 20px rgba(0,0,0,0.1)',
+            transform: 'perspective(800px) rotateY(-5deg)',
+          }}
+        >
+          <img
+            src={heroBook}
+            alt="Livro 200 Receitas Fit com Whey"
+            className="w-full"
+          />
+        </div>
+      </div>
     </div>
   </section>
 );
