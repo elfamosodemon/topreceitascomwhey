@@ -21,7 +21,7 @@ const PricingSection = () => {
               </p>
               <div className="mb-6">
                 <span className="text-price-old line-through text-lg">R$ 97</span>
-                <p className="text-5xl font-display font-extrabold text-price-new">R$ 18</p>
+                <p className="text-5xl font-display font-extrabold text-price-new">R$ 19,90</p>
               </div>
               <ul className="space-y-3 mb-8">
                 {[
@@ -54,7 +54,7 @@ const PricingSection = () => {
               </p>
               <div className="mb-6">
                 <span className="text-price-old line-through text-lg">R$ 287</span>
-                <p className="text-5xl font-display font-extrabold text-price-new">R$ 29</p>
+                <p className="text-5xl font-display font-extrabold text-price-new">R$ 34,90</p>
                 <p className="text-xs text-muted-foreground mt-1">Menos que um lanche do iFood</p>
               </div>
               <ul className="space-y-3 mb-8">

@@ -53,7 +53,7 @@ const UpsellModal = ({ open, onClose }: UpsellModalProps) => {
             <span className="font-extrabold">Combo Shape Gourmet COMPLETO</span>{" "}
             pagando apenas{" "}
             <span className="bg-highlight/40 text-price-new font-extrabold px-2 py-0.5 rounded">
-              R$ 2,90 a mais
+              R$ 5,00 a mais
             </span>
             .
           </p>
@@ -61,13 +61,13 @@ const UpsellModal = ({ open, onClose }: UpsellModalProps) => {
           {/* Value box */}
           <div className="border-2 border-dashed border-border bg-muted/40 rounded-xl p-5 mb-6">
             <p className="text-foreground text-sm md:text-base leading-relaxed text-center">
-              O Plano Essencial custa <span className="font-bold">R$&nbsp;18</span>.
-              O Combo Completo custa <span className="font-bold">R$&nbsp;29</span>.
+              O Plano Essencial custa <span className="font-bold">R$&nbsp;19,90</span>.
+              O Combo Completo custa <span className="font-bold">R$&nbsp;34,90</span>.
               Mas exclusivamente agora, você destrava{" "}
               <span className="font-extrabold text-primary uppercase">TUDO</span>{" "}
               por apenas{" "}
               <span className="text-xl font-display font-extrabold text-price-new">
-                R$&nbsp;20,90
+                R$&nbsp;24,90
               </span>
               .
             </p>
@@ -92,7 +92,7 @@ const UpsellModal = ({ open, onClose }: UpsellModalProps) => {
               className="w-full text-center gradient-cta text-accent-foreground font-extrabold text-base md:text-lg py-4 rounded-full glow-cta hover:glow-cta-hover transition-all duration-300 animate-pulse-slow flex items-center justify-center gap-2"
             >
               <ShoppingCart className="w-5 h-5" />
-              SIM! QUERO TUDO POR R$ 20,90
+              SIM! QUERO TUDO POR R$ 24,90
             </a>
 
             <button
