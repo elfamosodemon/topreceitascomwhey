@@ -5,7 +5,7 @@ const benefits = [
   { icon: Gift, text: "+40 Receitas Salgadas com Whey" },
   { icon: Gift, text: "+35 Receitas de Pré e Pós-treino" },
   { icon: Gift, text: "+30 Delícias Inéditas para Air Fryer" },
-  { icon: Users, text: "Acesso imediato ao Grupo VIP" },
+  { icon: Users, text: "Acesso imediato à Área de Membros Premium e Grupo VIP" },
 ];
 
 interface UpsellModalProps {
@@ -63,9 +63,9 @@ const UpsellModal = ({ open, onClose }: UpsellModalProps) => {
             <p className="text-foreground text-sm md:text-base leading-relaxed text-center">
               O Plano Essencial custa <span className="font-bold">R$&nbsp;19,90</span>.
               O Combo Completo custa <span className="font-bold">R$&nbsp;34,90</span>.
-              Mas exclusivamente agora, você destrava{" "}
-              <span className="font-extrabold text-primary uppercase">TUDO</span>{" "}
-              por apenas{" "}
+              Mas exclusivamente agora, você destrava o acesso à{" "}
+              <span className="font-extrabold text-primary uppercase">Área de Membros Premium</span>{" "}
+              com <span className="font-extrabold text-primary uppercase">TUDO</span> liberado por apenas{" "}
               <span className="text-xl font-display font-extrabold text-price-new">
                 R$&nbsp;24,90
               </span>
