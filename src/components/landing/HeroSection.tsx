@@ -16,7 +16,7 @@ const HeroSection = () => (
           <span className="line-through text-lg" style={{ color: '#999' }}>De R$ 97</span>
           <span className="text-lg ml-2" style={{ color: '#1A1A1A' }}>por apenas</span>
           <p className="text-5xl md:text-6xl font-display font-extrabold mt-1" style={{ color: '#1A1A1A' }}>
-            R$ 18
+            R$ 19,90
           </p>
         </div>
       </div>
