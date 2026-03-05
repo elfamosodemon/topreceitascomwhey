@@ -76,7 +76,7 @@ const PricingSection = () => {
                 ))}
                 <li className="flex items-start gap-2 text-sm text-foreground">
                   <Users className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                  Acesso imediato à Área de Membros Premium e Grupo VIP
+                  Acesso imediato à Área de Membros Premium e Grupo VIP (Tudo isso por menos de R$ 0,12 por receita!)
                 </li>
               </ul>
               <a
