@@ -76,7 +76,7 @@ const PricingSection = () => {
                 ))}
                 <li className="flex items-start gap-2 text-sm text-foreground">
                   <Users className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                  Grupo VIP de Alunos: Troca de dicas e suporte exclusivo
+                  Acesso imediato à Área de Membros Premium e Grupo VIP
                 </li>
               </ul>
               <a
