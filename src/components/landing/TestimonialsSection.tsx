@@ -4,6 +4,7 @@ import { useToast } from "@/hooks/use-toast";
 import testimonialAna from "@/assets/testimonial-ana.jpg";
 import testimonialCarla from "@/assets/testimonial-carla.jpg";
 import testimonialCamila from "@/assets/testimonial-camila.jpg";
+import testimonialMilla from "@/assets/testimonial-milla.jpg";
 
 interface Testimonial {
   name: string;
@@ -22,6 +23,7 @@ const testimonials: Testimonial[] = [
   { name: "Patrícia Santos", text: "As receitas são super fáceis, faço em menos de 10 minutos.", likes: 201, time: "há 2 dias" },
   { name: "Roberta Alves", text: "O grupo VIP do WhatsApp é maravilhoso! Sempre tem dicas novas.", likes: 178, time: "há 2 dias" },
   { name: "Camila Ferreira", text: "Comprei o premium e valeu cada centavo. As receitas de air fryer são TOP!", likes: 342, time: "há 2 dias", image: testimonialCamila },
+  { name: "Milla Sathler", text: "Adorei! Acabei de comprar, fiquei com medo principalmente pq o insta é novo, mas chegou tudo certinho. Muito legal pra poder ter mais ideias!", likes: 127, time: "há 1 dia", image: testimonialMilla },
 ];
 
 const getInitials = (name: string) =>
