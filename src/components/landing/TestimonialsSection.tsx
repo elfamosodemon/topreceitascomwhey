@@ -8,6 +8,7 @@ import testimonialMilla from "@/assets/testimonial-milla.jpg";
 import testimonialMilena from "@/assets/testimonial-milena.jpg";
 import testimonialClaudio from "@/assets/testimonial-claudio.jpg";
 import testimonialRebeca from "@/assets/testimonial-rebeca.jpg";
+import testimonialRebecaPost from "@/assets/testimonial-rebeca-post.jpg";
 
 interface Testimonial {
   name: string;
