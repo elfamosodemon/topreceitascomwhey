@@ -26,7 +26,7 @@ const testimonials: Testimonial[] = [
   { name: "Milla Sathler", text: "Adorei! Acabei de comprar, fiquei com medo principalmente pq o insta é novo, mas chegou tudo certinho. Muito legal pra poder ter mais ideias!", likes: 127, time: "há 1 dia", avatar: testimonialMilla },
   { name: "Camila Ferreira", text: "Comprei o premium e valeu cada centavo. As receitas de air fryer são TOP!", likes: 342, time: "há 2 dias", image: testimonialCamila },
   { name: "Claudio Nunes Gularte", text: "Muito legal as receitas, não vejo a hora de começar a fazer!", likes: 145, time: "há 1 dia", avatar: testimonialClaudio },
-  { name: "Rebeca Bianchi", text: "Amei a área de membros, super fácil de usar!", likes: 167, time: "há 2 dias", avatar: testimonialRebeca },
+  { name: "Rebeca Bianchi", text: "Amei a área de membros, super fácil de usar!", likes: 167, time: "há 2 dias", avatar: testimonialRebeca, image: testimonialRebecaPost },
   { name: "Mariana Silva", text: "Finalmente consegui matar minha vontade de doce sem sair da dieta! As receitas são incríveis.", likes: 234, time: "há 2 dias" },
   { name: "Juliana Mendes", text: "Até meu marido que não faz dieta amou as receitas. Virou rotina aqui em casa.", likes: 312, time: "há 2 dias" },
   { name: "Fernanda Lima", text: "Melhor investimento que fiz. Emagreci 8kg comendo doce todo dia.", likes: 445, time: "há 2 dias" },
