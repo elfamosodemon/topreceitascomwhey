@@ -28,6 +28,7 @@ const testimonials: Testimonial[] = [
   { name: "Camila Ferreira", text: "Comprei o premium e valeu cada centavo. As receitas de air fryer são TOP!", likes: 342, time: "há 2 dias", image: testimonialCamila },
   { name: "Milla Sathler", text: "Adorei! Acabei de comprar, fiquei com medo principalmente pq o insta é novo, mas chegou tudo certinho. Muito legal pra poder ter mais ideias!", likes: 127, time: "há 1 dia", avatar: testimonialMilla },
   { name: "Milena Personal", text: "Nossa amei as receitas! No começo estava com receio achando que era golpe rs mas não, gente, as receitas chegaram pra mim. Receitas incríveis com baixo custo. Super vale a pena comprar o e-book das receitas. Ameiiiiiiii obg! São receitas maravilhosas e ainda veio receitas saudáveis para crianças!", likes: 198, time: "há 3 dias", avatar: testimonialMilena },
+  { name: "Claudio Nunes Gularte", text: "Muito legal as receitas, não vejo a hora de começar a fazer!", likes: 145, time: "há 1 dia", avatar: testimonialClaudio },
 ];
 
 const getInitials = (name: string) =>
