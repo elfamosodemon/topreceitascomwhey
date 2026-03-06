@@ -57,9 +57,13 @@ const TestimonialCard = ({ t }: { t: Testimonial }) => {
   return (
     <div className="bg-card rounded-2xl p-5 shadow-card break-inside-avoid mb-4 border border-border/50 hover:shadow-warm transition-all duration-300">
       <div className="flex items-center gap-3 mb-3">
-        <div className="w-10 h-10 rounded-full bg-accent/15 flex items-center justify-center font-bold text-sm text-accent">
-          {getInitials(t.name)}
-        </div>
+        {t.avatar ? (
+          <img src={t.avatar} alt={t.name} className="w-10 h-10 rounded-full object-cover" />
+        ) : (
+          <div className="w-10 h-10 rounded-full bg-accent/15 flex items-center justify-center font-bold text-sm text-accent">
+            {getInitials(t.name)}
+          </div>
+        )}
         <div className="flex-1">
           <p className="font-semibold text-foreground text-sm">{t.name}</p>
           <p className="text-muted-foreground text-xs">{t.time}</p>
