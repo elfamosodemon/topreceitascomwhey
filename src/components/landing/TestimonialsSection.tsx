@@ -7,6 +7,7 @@ import testimonialCamila from "@/assets/testimonial-camila.jpg";
 import testimonialMilla from "@/assets/testimonial-milla.jpg";
 import testimonialMilena from "@/assets/testimonial-milena.jpg";
 import testimonialClaudio from "@/assets/testimonial-claudio.jpg";
+import testimonialRebeca from "@/assets/testimonial-rebeca.jpg";
 
 interface Testimonial {
   name: string;
@@ -18,17 +19,18 @@ interface Testimonial {
 }
 
 const testimonials: Testimonial[] = [
-  { name: "Mariana Silva", text: "Finalmente consegui matar minha vontade de doce sem sair da dieta! As receitas são incríveis.", likes: 234, time: "há 2 dias" },
   { name: "Ana Costa", text: "Meu whey nunca mais ficou sem graça. Faço brownie proteico todo dia!", likes: 189, time: "há 2 dias", image: testimonialAna },
-  { name: "Juliana Mendes", text: "Até meu marido que não faz dieta amou as receitas. Virou rotina aqui em casa.", likes: 312, time: "há 2 dias" },
+  { name: "Milena Personal", text: "Nossa amei as receitas! No começo estava com receio achando que era golpe rs mas não, gente, as receitas chegaram pra mim. Receitas incríveis com baixo custo. Super vale a pena comprar o e-book das receitas. Ameiiiiiiii obg! São receitas maravilhosas e ainda veio receitas saudáveis para crianças!", likes: 198, time: "há 3 dias", avatar: testimonialMilena },
   { name: "Carla Rodrigues", text: "O brigadeiro proteico é surreal! Ninguém acredita que é fit.", likes: 156, time: "há 2 dias", image: testimonialCarla },
+  { name: "Milla Sathler", text: "Adorei! Acabei de comprar, fiquei com medo principalmente pq o insta é novo, mas chegou tudo certinho. Muito legal pra poder ter mais ideias!", likes: 127, time: "há 1 dia", avatar: testimonialMilla },
+  { name: "Camila Ferreira", text: "Comprei o premium e valeu cada centavo. As receitas de air fryer são TOP!", likes: 342, time: "há 2 dias", image: testimonialCamila },
+  { name: "Claudio Nunes Gularte", text: "Muito legal as receitas, não vejo a hora de começar a fazer!", likes: 145, time: "há 1 dia", avatar: testimonialClaudio },
+  { name: "Rebeca Bianchi", text: "Amei a área de membros, super fácil de usar!", likes: 167, time: "há 2 dias", avatar: testimonialRebeca },
+  { name: "Mariana Silva", text: "Finalmente consegui matar minha vontade de doce sem sair da dieta! As receitas são incríveis.", likes: 234, time: "há 2 dias" },
+  { name: "Juliana Mendes", text: "Até meu marido que não faz dieta amou as receitas. Virou rotina aqui em casa.", likes: 312, time: "há 2 dias" },
   { name: "Fernanda Lima", text: "Melhor investimento que fiz. Emagreci 8kg comendo doce todo dia.", likes: 445, time: "há 2 dias" },
   { name: "Patrícia Santos", text: "As receitas são super fáceis, faço em menos de 10 minutos.", likes: 201, time: "há 2 dias" },
   { name: "Roberta Alves", text: "O grupo VIP do WhatsApp é maravilhoso! Sempre tem dicas novas.", likes: 178, time: "há 2 dias" },
-  { name: "Camila Ferreira", text: "Comprei o premium e valeu cada centavo. As receitas de air fryer são TOP!", likes: 342, time: "há 2 dias", image: testimonialCamila },
-  { name: "Milla Sathler", text: "Adorei! Acabei de comprar, fiquei com medo principalmente pq o insta é novo, mas chegou tudo certinho. Muito legal pra poder ter mais ideias!", likes: 127, time: "há 1 dia", avatar: testimonialMilla },
-  { name: "Milena Personal", text: "Nossa amei as receitas! No começo estava com receio achando que era golpe rs mas não, gente, as receitas chegaram pra mim. Receitas incríveis com baixo custo. Super vale a pena comprar o e-book das receitas. Ameiiiiiiii obg! São receitas maravilhosas e ainda veio receitas saudáveis para crianças!", likes: 198, time: "há 3 dias", avatar: testimonialMilena },
-  { name: "Claudio Nunes Gularte", text: "Muito legal as receitas, não vejo a hora de começar a fazer!", likes: 145, time: "há 1 dia", avatar: testimonialClaudio },
 ];
 
 const getInitials = (name: string) =>
