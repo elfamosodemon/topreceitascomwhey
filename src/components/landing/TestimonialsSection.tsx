@@ -13,6 +13,7 @@ interface Testimonial {
   likes: number;
   time: string;
   image?: string;
+  avatar?: string;
 }
 
 const testimonials: Testimonial[] = [
