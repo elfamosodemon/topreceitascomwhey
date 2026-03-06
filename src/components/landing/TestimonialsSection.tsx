@@ -4,6 +4,7 @@ import { useToast } from "@/hooks/use-toast";
 import testimonialAna from "@/assets/testimonial-ana.jpg";
 import testimonialCarla from "@/assets/testimonial-carla.jpg";
 import testimonialCamila from "@/assets/testimonial-camila.jpg";
+import testimonialMilla from "@/assets/testimonial-milla.jpg";
 
 interface Testimonial {
   name: string;
