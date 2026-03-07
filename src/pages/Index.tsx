@@ -5,6 +5,7 @@ import IndispensableSection from "@/components/landing/IndispensableSection";
 import RecipeShowcase from "@/components/landing/RecipeShowcase";
 import BonusSection from "@/components/landing/BonusSection";
 import PricingSection from "@/components/landing/PricingSection";
+import TrustBadgesSection from "@/components/landing/TrustBadgesSection";
 import TestimonialsSection from "@/components/landing/TestimonialsSection";
 import FAQSection from "@/components/landing/FAQSection";
 import LandingFooter from "@/components/landing/LandingFooter";
