@@ -19,6 +19,7 @@ const Index = () => (
     <RecipeShowcase />
     <BonusSection />
     <PricingSection />
+    <TrustBadgesSection />
     <TestimonialsSection />
     <FAQSection />
     <LandingFooter />
