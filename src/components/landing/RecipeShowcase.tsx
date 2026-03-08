@@ -65,6 +65,16 @@ const RecipeShowcase = () => (
         ))}
       </div>
 
+      <div className="text-center mt-10">
+        <p className="text-muted-foreground mb-4">...e muito mais!</p>
+        <a
+          href="#precos"
+          className="inline-block gradient-cta text-accent-foreground font-bold text-lg px-8 py-3 rounded-full glow-cta hover:glow-cta-hover transition-all duration-300"
+        >
+          QUERO AS RECEITAS
+        </a>
+      </div>
+
       {/* Access Steps */}
       <div className="mt-14">
         <h3 className="text-2xl md:text-3xl font-display font-extrabold text-center text-gradient-warm mb-8">
@@ -83,16 +93,6 @@ const RecipeShowcase = () => (
             </div>
           ))}
         </div>
-      </div>
-
-      <div className="text-center mt-10">
-        <p className="text-muted-foreground mb-4">...e muito mais!</p>
-        <a
-          href="#precos"
-          className="inline-block gradient-cta text-accent-foreground font-bold text-lg px-8 py-3 rounded-full glow-cta hover:glow-cta-hover transition-all duration-300"
-        >
-          QUERO AS RECEITAS
-        </a>
       </div>
     </div>
   </section>
