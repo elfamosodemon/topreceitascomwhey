@@ -47,13 +47,43 @@ const RecipeShowcase = () => (
       <div className="flex justify-center mb-12">
         <div className="relative w-[260px] md:w-[300px]">
           {/* Phone frame */}
-          <div className="relative bg-foreground rounded-[2.5rem] p-2 shadow-xl">
+          <div
+            className="relative shadow-xl"
+            style={{
+              background: '#1a1a1a',
+              borderRadius: '2.5rem',
+              padding: '10px 8px',
+            }}
+          >
             {/* Notch */}
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-28 h-6 bg-foreground rounded-b-2xl z-10" />
-            {/* Screen with video - overflow hidden + border-radius to clip */}
-            <div className="relative overflow-hidden rounded-[2rem] bg-black">
+            <div
+              className="absolute top-0 left-1/2 -translate-x-1/2 z-10"
+              style={{
+                width: '7rem',
+                height: '1.5rem',
+                background: '#1a1a1a',
+                borderBottomLeftRadius: '1rem',
+                borderBottomRightRadius: '1rem',
+              }}
+            />
+            {/* Screen – clip-path garante recorte perfeito */}
+            <div
+              style={{
+                borderRadius: '2rem',
+                overflow: 'hidden',
+                WebkitMaskImage: '-webkit-radial-gradient(white, black)',
+                position: 'relative',
+                background: '#000',
+              }}
+            >
               <video
-                className="w-full aspect-[9/16] object-cover"
+                style={{
+                  display: 'block',
+                  width: '100%',
+                  aspectRatio: '9/16',
+                  objectFit: 'cover',
+                  borderRadius: '2rem',
+                }}
                 autoPlay
                 muted
                 loop
