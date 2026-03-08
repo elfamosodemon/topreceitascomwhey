@@ -43,19 +43,7 @@ const RecipeShowcase = () => (
         Só algumas das <strong className="text-foreground">200 receitas</strong> que vão transformar sua dieta
       </p>
 
-      {/* Video Player - clean, no mockup */}
-      <div className="flex justify-center mb-12">
-        <div className="w-full max-w-lg">
-          <video
-            className="w-full rounded-2xl shadow-card"
-            autoPlay
-            muted
-            loop
-            playsInline
-            src="/videos/video_ensinando.mp4"
-          />
-        </div>
-      </div>
+
 
       {/* Recipe Grid */}
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
