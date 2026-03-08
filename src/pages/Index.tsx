@@ -8,6 +8,7 @@ import PricingSection from "@/components/landing/PricingSection";
 import TrustBadgesSection from "@/components/landing/TrustBadgesSection";
 import TestimonialsSection from "@/components/landing/TestimonialsSection";
 import FAQSection from "@/components/landing/FAQSection";
+import AboutSection from "@/components/landing/AboutSection";
 import LandingFooter from "@/components/landing/LandingFooter";
 
 const Index = () => (
@@ -19,6 +20,7 @@ const Index = () => (
     <RecipeShowcase />
     <BonusSection />
     <PricingSection />
+    <AboutSection />
     <TrustBadgesSection />
     <TestimonialsSection />
     <FAQSection />
