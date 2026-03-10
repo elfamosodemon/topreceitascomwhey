@@ -1,5 +1,4 @@
 import brownieImg from "@/assets/brownie.jpg";
-import brownieImg from "@/assets/brownie.jpg";
 import mugCakeImg from "@/assets/mug-cake.jpg";
 import pudimImg from "@/assets/pudim.jpg";
 import cookiesImg from "@/assets/cookies.jpg";
