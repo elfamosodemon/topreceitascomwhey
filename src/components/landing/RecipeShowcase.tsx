@@ -55,5 +55,8 @@ const RecipeShowcase = () => (
           QUERO AS RECEITAS
         </a>
       </div>
+    </div>
+  </section>
+);
 
 export default RecipeShowcase;
