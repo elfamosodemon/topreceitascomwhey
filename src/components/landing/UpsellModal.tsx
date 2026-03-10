@@ -92,7 +92,7 @@ const UpsellModal = ({ open, onClose }: UpsellModalProps) => {
               className="w-full text-center gradient-cta text-accent-foreground font-extrabold text-base md:text-lg py-4 rounded-full glow-cta hover:glow-cta-hover transition-all duration-300 animate-pulse-slow flex items-center justify-center gap-2"
             >
               <ShoppingCart className="w-5 h-5" />
-              SIM! QUERO TUDO POR R$ 24,90
+              SIM! COMPRAR AGORA POR R$ 24,90
             </a>
 
             <button
