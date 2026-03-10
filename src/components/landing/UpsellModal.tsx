@@ -18,7 +18,7 @@ const UpsellModal = ({ open, onClose }: UpsellModalProps) => {
 
   const handleDecline = () => {
     onClose();
-    window.open("https://www.ggcheckout.com/checkout/v5/pUjybKogGwD3UpX1iQ9i", "_blank");
+    (window as any).redirectWithParams("https://www.ggcheckout.com/checkout/v5/pUjybKogGwD3UpX1iQ9i");
   };
 
   return (
