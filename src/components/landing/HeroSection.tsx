@@ -1,4 +1,4 @@
-import heroGirl from "@/assets/hero-girl.jpg";
+import heroGirl from "@/assets/hero-girl-new.jpg";
 
 const HeroSection = () => (
   <section className="py-16 md:py-24 px-4" style={{ background: '#FFFBF0' }}>
