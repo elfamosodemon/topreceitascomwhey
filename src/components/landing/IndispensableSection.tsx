@@ -1,4 +1,4 @@
-import indispensableImg from "@/assets/indispensable.jpg";
+import indispensableImg from "@/assets/indispensable-new.png";
 
 const IndispensableSection = () => (
   <section className="py-16 px-4 bg-card">
