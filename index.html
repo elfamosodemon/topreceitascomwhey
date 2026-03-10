@@ -36,6 +36,20 @@
       a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
       document.head.appendChild(a);
     </script>
+    <script>
+      function redirectWithParams(destination) {
+        var currentParams = window.location.search;
+        if (!currentParams) {
+          window.location.href = destination;
+          return;
+        }
+        if (destination.includes("?")) {
+          window.location.href = destination + "&" + currentParams.substring(1);
+        } else {
+          window.location.href = destination + currentParams;
+        }
+      }
+    </script>
   </head>
 
   <body>

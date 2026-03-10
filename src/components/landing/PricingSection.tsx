@@ -79,14 +79,12 @@ const PricingSection = () => {
                   Acesso imediato à Área de Membros Premium e Grupo VIP (Tudo isso por menos de R$ 0,12 por receita!)
                 </li>
               </ul>
-              <a
-                href="https://www.ggcheckout.com/checkout/v5/yylOi2P7GKXl9ci6Anwz"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-center gradient-cta text-accent-foreground font-bold py-3 rounded-full glow-cta hover:glow-cta-hover transition-all duration-300"
+              <button
+                onClick={() => (window as any).redirectWithParams("https://www.ggcheckout.com/checkout/v5/yylOi2P7GKXl9ci6Anwz")}
+                className="block w-full text-center gradient-cta text-accent-foreground font-bold py-3 rounded-full glow-cta hover:glow-cta-hover transition-all duration-300"
               >
                 COMPRAR AGORA
-              </a>
+              </button>
             </div>
           </div>
         </div>

@@ -18,7 +18,7 @@ const UpsellModal = ({ open, onClose }: UpsellModalProps) => {
 
   const handleDecline = () => {
     onClose();
-    window.open("https://www.ggcheckout.com/checkout/v5/pUjybKogGwD3UpX1iQ9i", "_blank");
+    (window as any).redirectWithParams("https://www.ggcheckout.com/checkout/v5/pUjybKogGwD3UpX1iQ9i");
   };
 
   return (
@@ -85,15 +85,13 @@ const UpsellModal = ({ open, onClose }: UpsellModalProps) => {
 
           {/* CTAs */}
           <div className="flex flex-col items-center gap-3">
-            <a
-              href="https://www.ggcheckout.com/checkout/v2/A8q8FtayMinvM3VWnUg1"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={() => (window as any).redirectWithParams("https://www.ggcheckout.com/checkout/v2/A8q8FtayMinvM3VWnUg1")}
               className="w-full text-center gradient-cta text-accent-foreground font-extrabold text-base md:text-lg py-4 rounded-full glow-cta hover:glow-cta-hover transition-all duration-300 animate-pulse-slow flex items-center justify-center gap-2"
             >
               <ShoppingCart className="w-5 h-5" />
               SIM! COMPRAR AGORA POR R$ 24,90
-            </a>
+            </button>
 
             <button
               onClick={handleDecline}
