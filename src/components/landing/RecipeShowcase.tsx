@@ -1,4 +1,4 @@
-import { CheckCircle, Mail, Lock } from "lucide-react";
+import brownieImg from "@/assets/brownie.jpg";
 import brownieImg from "@/assets/brownie.jpg";
 import mugCakeImg from "@/assets/mug-cake.jpg";
 import pudimImg from "@/assets/pudim.jpg";
