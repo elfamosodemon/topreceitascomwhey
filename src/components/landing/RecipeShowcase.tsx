@@ -15,24 +15,6 @@ const recipes = [
   { name: "Barra Proteica de Whey", kcal: 12, img: brigadeiroImg },
 ];
 
-const steps = [
-  {
-    icon: CheckCircle,
-    title: "Compra Aprovada",
-    text: "Assim que o pagamento for confirmado, você receberá o link de acesso imediatamente no seu E-mail e no WhatsApp.",
-  },
-  {
-    icon: Mail,
-    title: "Seu Login",
-    text: "Para entrar na plataforma, basta usar o mesmo e-mail que você preencheu na hora da compra.",
-  },
-  {
-    icon: Lock,
-    title: "Crie sua Senha",
-    text: "No primeiro acesso, crie uma senha segura e pronto! Já pode acessar todas as receitas pelo celular ou computador.",
-  },
-];
-
 const RecipeShowcase = () => (
   <section className="py-16 px-4 gradient-warm">
     <div className="max-w-5xl mx-auto">
