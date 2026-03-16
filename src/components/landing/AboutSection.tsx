@@ -1,4 +1,4 @@
-import camilaImg from "@/assets/camila-pereira.png";
+import camilaImg from "@/assets/camila-pereira.webp";
 
 const AboutSection = () => (
   <section className="py-16 px-4 bg-muted">
@@ -8,6 +8,8 @@ const AboutSection = () => (
           src={camilaImg}
           alt="Camila Pereira, nutricionista e criadora do Doce Todo Dia, Shape Todo Ano"
           className="rounded-full shadow-card w-44 h-44 md:w-56 md:h-56 object-cover mx-auto"
+          loading="lazy"
+          decoding="async"
         />
       </div>
       <div className="w-full md:w-7/12">

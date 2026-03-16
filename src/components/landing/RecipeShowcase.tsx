@@ -1,9 +1,9 @@
-import brownieImg from "@/assets/brownie.jpg";
-import mugCakeImg from "@/assets/mug-cake.jpg";
-import pudimImg from "@/assets/pudim.jpg";
-import cookiesImg from "@/assets/cookies.jpg";
-import bombomImg from "@/assets/bombom.jpg";
-import brigadeiroImg from "@/assets/brigadeiro.jpg";
+import brownieImg from "@/assets/brownie.webp";
+import mugCakeImg from "@/assets/mug-cake.webp";
+import pudimImg from "@/assets/pudim.webp";
+import cookiesImg from "@/assets/cookies.webp";
+import bombomImg from "@/assets/bombom.webp";
+import brigadeiroImg from "@/assets/brigadeiro.webp";
 
 const recipes = [
   { name: "Brownie Proteico", kcal: 40, img: brownieImg },
@@ -24,8 +24,6 @@ const RecipeShowcase = () => (
         Só algumas das <strong className="text-foreground">200 receitas</strong> que vão transformar sua dieta
       </p>
 
-
-
       {/* Recipe Grid */}
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
         {recipes.map((r) => (
@@ -34,7 +32,7 @@ const RecipeShowcase = () => (
             className="bg-card rounded-xl overflow-hidden shadow-card hover:shadow-warm transition-all duration-300 hover:-translate-y-1"
           >
             <div className="relative">
-              <img src={r.img} alt={r.name} className="w-full aspect-square object-cover" />
+              <img src={r.img} alt={r.name} className="w-full aspect-square object-cover" loading="lazy" decoding="async" />
               <span className="absolute top-2 right-2 bg-badge-cal text-primary-foreground text-xs font-bold px-2.5 py-1 rounded-full">
                 🔥 {r.kcal} kcal
               </span>

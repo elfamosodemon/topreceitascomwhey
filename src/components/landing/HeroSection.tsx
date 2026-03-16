@@ -1,4 +1,4 @@
-import heroGirl from "@/assets/hero-girl-new.jpg";
+import heroGirl from "@/assets/hero-girl-new.webp";
 
 const HeroSection = () => (
   <section className="py-16 md:py-24 px-4" style={{ background: '#FFFBF0' }}>
@@ -33,6 +33,9 @@ const HeroSection = () => (
             src={heroGirl}
             alt="200 Receitas Fit com Whey - Livro e panquecas proteicas"
             className="w-full"
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
           />
         </div>
         <a
