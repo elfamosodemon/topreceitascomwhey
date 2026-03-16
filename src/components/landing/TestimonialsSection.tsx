@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { Heart, MessageCircle, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-import testimonialAna from "@/assets/testimonial-ana.jpg";
-import testimonialCarla from "@/assets/testimonial-carla.jpg";
-import testimonialCamila from "@/assets/testimonial-camila.jpg";
-import testimonialMilla from "@/assets/testimonial-milla.jpg";
-import testimonialMilena from "@/assets/testimonial-milena.jpg";
-import testimonialClaudio from "@/assets/testimonial-claudio.jpg";
-import testimonialRebeca from "@/assets/testimonial-rebeca.jpg";
-import testimonialRebecaPost from "@/assets/testimonial-rebeca-post.jpg";
+import testimonialAna from "@/assets/testimonial-ana.webp";
+import testimonialCarla from "@/assets/testimonial-carla.webp";
+import testimonialCamila from "@/assets/testimonial-camila.webp";
+import testimonialMilla from "@/assets/testimonial-milla.webp";
+import testimonialMilena from "@/assets/testimonial-milena.webp";
+import testimonialClaudio from "@/assets/testimonial-claudio.webp";
+import testimonialRebeca from "@/assets/testimonial-rebeca.webp";
+import testimonialRebecaPost from "@/assets/testimonial-rebeca-post.webp";
 
 interface Testimonial {
   name: string;
@@ -64,7 +64,7 @@ const TestimonialCard = ({ t }: { t: Testimonial }) => {
     <div className="bg-card rounded-2xl p-5 shadow-card break-inside-avoid mb-4 border border-border/50 hover:shadow-warm transition-all duration-300">
       <div className="flex items-center gap-3 mb-3">
         {t.avatar ? (
-          <img src={t.avatar} alt={t.name} className="w-10 h-10 rounded-full object-cover" />
+          <img src={t.avatar} alt={t.name} className="w-10 h-10 rounded-full object-cover" loading="lazy" decoding="async" />
         ) : (
           <div className="w-10 h-10 rounded-full bg-accent/15 flex items-center justify-center font-bold text-sm text-accent">
             {getInitials(t.name)}
@@ -81,6 +81,8 @@ const TestimonialCard = ({ t }: { t: Testimonial }) => {
           src={t.image}
           alt="Foto da receita"
           className={`w-full rounded-xl mb-3 ${t.fullImage ? "object-contain" : "aspect-video object-cover"}`}
+          loading="lazy"
+          decoding="async"
         />
       )}
       <div className="flex items-center gap-5 text-xs">

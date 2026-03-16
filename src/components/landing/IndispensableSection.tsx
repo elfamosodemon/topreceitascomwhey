@@ -1,4 +1,4 @@
-import indispensableImg from "@/assets/indispensable-new.png";
+import indispensableImg from "@/assets/indispensable-new.webp";
 
 const IndispensableSection = () => (
   <section className="py-16 px-4 bg-card">
@@ -10,6 +10,8 @@ const IndispensableSection = () => (
         src={indispensableImg}
         alt="Pudins, Panquecas, Brigadeiros e Cookies"
         className="w-full max-w-lg mx-auto rounded-2xl shadow-warm mb-8"
+        loading="lazy"
+        decoding="async"
       />
       <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
         Se você está consumindo whey com água, você está <strong className="text-foreground">perdendo sabor e oportunidade</strong>. 
