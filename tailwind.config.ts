@@ -57,6 +57,7 @@ export default {
         "badge-cal": "hsl(var(--badge-cal))",
         "bonus-bg": "hsl(var(--bonus-bg))",
         highlight: "hsl(var(--highlight))",
+        cyan: "hsl(var(--cyan))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
