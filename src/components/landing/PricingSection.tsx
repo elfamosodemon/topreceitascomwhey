@@ -44,7 +44,7 @@ const PricingSection = () => {
               </ul>
               <div className="mb-6">
                 <span className="text-price-old line-through text-base">De R$97</span>
-                <p className="text-5xl font-display font-extrabold text-primary">R$18</p>
+                <p className="text-5xl font-display font-extrabold text-primary">R$ 19,90</p>
               </div>
               <button
                 onClick={() => setShowUpsell(true)}
