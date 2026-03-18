@@ -25,10 +25,13 @@ const faqs = [
 ];
 
 const FAQSection = () => (
-  <section className="py-16 px-4 gradient-warm">
+  <section className="py-16 px-4 bg-section-peach">
     <div className="max-w-2xl mx-auto">
-      <h2 className="text-3xl md:text-4xl font-display font-extrabold text-center text-gradient-warm mb-10">
-        Perguntas Frequentes
+      <h2 className="text-3xl md:text-4xl font-display font-extrabold text-center text-foreground mb-2">
+        Dúvidas
+      </h2>
+      <h2 className="text-3xl md:text-4xl font-display font-extrabold text-center mb-10">
+        <span className="text-highlight-underline">Frequentes</span>
       </h2>
       <Accordion type="single" collapsible className="space-y-3">
         {faqs.map((faq, i) => (

@@ -10,22 +10,26 @@ const bonuses = [
 const BonusSection = () => (
   <section className="py-16 px-4 bg-card">
     <div className="max-w-5xl mx-auto">
-      <h2 className="text-3xl md:text-4xl font-display font-extrabold text-center text-gradient-warm mb-4">
-        Compre e Ganhe!
+      <h2 className="text-3xl md:text-4xl font-display font-extrabold text-center text-foreground mb-2">
+        Você ainda leva
       </h2>
-      <p className="text-center text-muted-foreground mb-10">Bônus para quem compra hoje</p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <h2 className="text-3xl md:text-4xl font-display font-extrabold text-center mb-10">
+        <span className="text-highlight-underline">tudo isso de graça</span>
+      </h2>
+      <div className="max-w-2xl mx-auto space-y-4">
         {bonuses.map((b) => (
           <div
             key={b.num}
-            className="bg-bonus-bg rounded-xl p-6 shadow-card hover:shadow-warm transition-shadow duration-300 flex items-start gap-4"
+            className="bg-background rounded-xl p-5 shadow-card hover:shadow-warm transition-shadow duration-300 flex items-center gap-4 border border-border/50"
           >
-            <div className="w-14 h-14 rounded-full gradient-hero flex items-center justify-center flex-shrink-0">
-              <b.icon className="w-7 h-7 text-primary-foreground" />
+            <div className="w-12 h-12 rounded-full gradient-hero flex items-center justify-center flex-shrink-0">
+              <b.icon className="w-6 h-6 text-primary-foreground" />
             </div>
-            <div>
-              <span className="text-primary font-bold text-sm">{b.num}</span>
-              <h3 className="font-display font-bold text-lg text-foreground">{b.title}</h3>
+            <div className="flex-1">
+              <div className="flex items-center gap-2">
+                <span className="text-primary font-bold text-sm">{b.num}</span>
+                <h3 className="font-display font-bold text-lg text-foreground">{b.title}</h3>
+              </div>
               <p className="text-muted-foreground text-sm">{b.desc}</p>
             </div>
           </div>

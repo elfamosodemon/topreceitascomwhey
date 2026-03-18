@@ -15,16 +15,18 @@ const recipes = [
 ];
 
 const RecipeShowcase = () => (
-  <section className="py-16 px-4 gradient-warm">
+  <section className="py-16 px-4 bg-section-peach">
     <div className="max-w-5xl mx-auto">
-      <h2 className="text-3xl md:text-4xl font-display font-extrabold text-center text-gradient-warm mb-4">
-        Veja o que você vai aprender!
+      <h2 className="text-3xl md:text-4xl font-display font-extrabold text-center text-foreground mb-2">
+        Veja o que você vai
+      </h2>
+      <h2 className="text-3xl md:text-4xl font-display font-extrabold text-center mb-4">
+        <span className="text-highlight-underline">aprender a fazer</span>
       </h2>
       <p className="text-center text-muted-foreground mb-10">
         Só algumas das <strong className="text-foreground">200 receitas</strong> que vão transformar sua dieta
       </p>
 
-      {/* Recipe Grid */}
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
         {recipes.map((r) => (
           <div

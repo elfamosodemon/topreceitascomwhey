@@ -66,7 +66,7 @@ const TestimonialCard = ({ t }: { t: Testimonial }) => {
         {t.avatar ? (
           <img src={t.avatar} alt={t.name} className="w-10 h-10 rounded-full object-cover" loading="lazy" decoding="async" />
         ) : (
-          <div className="w-10 h-10 rounded-full bg-accent/15 flex items-center justify-center font-bold text-sm text-accent">
+          <div className="w-10 h-10 rounded-full gradient-hero flex items-center justify-center font-bold text-sm text-primary-foreground">
             {getInitials(t.name)}
           </div>
         )}
@@ -115,8 +115,7 @@ const TestimonialCard = ({ t }: { t: Testimonial }) => {
           />
           <button
             onClick={handleSendReply}
-            className="flex items-center gap-1 text-sm font-medium text-accent-foreground px-3 py-2 rounded-lg transition-all duration-200 hover:opacity-90"
-            style={{ background: "linear-gradient(135deg, #10B981, #059669)" }}
+            className="flex items-center gap-1 text-sm font-medium text-accent-foreground px-3 py-2 rounded-lg gradient-cta transition-all duration-200 hover:opacity-90"
           >
             <Send className="w-3.5 h-3.5" />
             Enviar
@@ -128,10 +127,13 @@ const TestimonialCard = ({ t }: { t: Testimonial }) => {
 };
 
 const TestimonialsSection = () => (
-  <section className="py-16 px-4" style={{ background: "#FAFAF8" }}>
+  <section className="py-16 px-4 bg-card">
     <div className="max-w-4xl mx-auto">
-      <h2 className="text-3xl md:text-4xl font-display font-extrabold text-center text-gradient-warm mb-2">
-        Resultados Reais da Nossa Comunidade
+      <h2 className="text-3xl md:text-4xl font-display font-extrabold text-center text-foreground mb-2">
+        14.800 pessoas já
+      </h2>
+      <h2 className="text-3xl md:text-4xl font-display font-extrabold text-center mb-2">
+        <span className="text-highlight-underline">transformaram o whey</span>
       </h2>
       <p className="text-center text-muted-foreground mb-10">
         Veja o que estão dizendo sobre as receitas 💬
@@ -144,11 +146,7 @@ const TestimonialsSection = () => (
       <div className="text-center mt-10">
         <a
           href="#precos"
-          className="inline-block font-bold text-lg px-8 py-3 rounded-full text-accent-foreground transition-all duration-300"
-          style={{
-            background: "linear-gradient(135deg, #10B981, #059669)",
-            boxShadow: "0 6px 20px rgba(16, 185, 129, 0.35)",
-          }}
+          className="inline-block font-bold text-lg px-8 py-3 rounded-full text-accent-foreground gradient-cta glow-cta hover:glow-cta-hover transition-all duration-300"
         >
           QUERO AS RECEITAS
         </a>
