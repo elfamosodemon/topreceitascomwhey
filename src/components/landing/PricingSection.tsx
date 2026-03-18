@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Check, Star, Gift, Lock, ShieldCheck } from "lucide-react";
 import UpsellModal from "./UpsellModal";
+import bandeirasImg from "@/assets/bandeiras-pagamento.webp";
 
 const PricingSection = () => {
   const [showUpsell, setShowUpsell] = useState(false);
@@ -9,9 +10,12 @@ const PricingSection = () => {
     <>
       <section id="precos" className="py-16 px-4 gradient-warm">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-display font-extrabold text-center text-gradient-warm mb-12">
+          <h2 className="text-3xl md:text-4xl font-display font-extrabold text-center text-gradient-warm mb-4">
             Escolha seu plano
           </h2>
+          <div className="flex justify-center mb-10">
+            <img src={bandeirasImg} alt="Formas de pagamento: Pix, Visa, Mastercard, American Express, Elo, Hipercard, Boleto" className="h-6 md:h-7 opacity-60" loading="lazy" decoding="async" />
+          </div>
           <div className="grid md:grid-cols-2 gap-6 items-start">
             {/* Starter */}
             <div className="bg-card rounded-2xl p-8 shadow-card border border-border">
