@@ -36,26 +36,23 @@
 
     --radius: 0.75rem;
 
-    --cta-glow: 142 70% 42%;
+    --cta-glow: 25 100% 50%;
     --urgency: 25 100% 55%;
-    --price-old: 0 60% 50%;
-    --price-new: 142 70% 35%;
+    --price-old: 0 0% 50%;
+    --price-new: 25 100% 50%;
     --badge-cal: 25 90% 50%;
     --bonus-bg: 30 60% 95%;
     --highlight: 45 100% 60%;
+    --cyan: 180 100% 45%;
 
-    --hero-bg: 25 100% 50%;
-    --section-peach: 25 100% 96%;
-    --section-cream: 30 100% 97%;
+    --section-peach: 25 80% 94%;
 
     --font-display: 'Baloo 2', cursive;
     --font-body: 'Poppins', sans-serif;
 
-    --gradient-hero: linear-gradient(135deg, hsl(25 100% 55%), hsl(35 100% 60%));
-    --gradient-hero-bg: linear-gradient(180deg, hsl(25 85% 55%), hsl(30 90% 50%));
-    --gradient-warm: linear-gradient(180deg, hsl(30 100% 97%), hsl(25 80% 92%));
-    --gradient-cta: linear-gradient(135deg, hsl(142 70% 42%), hsl(142 80% 35%));
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(30 40% 97%));
+    --gradient-hero: linear-gradient(135deg, hsl(25 100% 55%), hsl(30 100% 50%));
+    --gradient-hero-bg: linear-gradient(180deg, hsl(25 100% 52%), hsl(28 100% 48%));
+    --gradient-cta: linear-gradient(135deg, hsl(25 100% 55%), hsl(30 100% 48%));
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -92,10 +89,6 @@
     background: var(--gradient-hero-bg);
   }
 
-  .gradient-warm {
-    background: var(--gradient-warm);
-  }
-
   .gradient-cta {
     background: var(--gradient-cta);
   }
@@ -104,44 +97,17 @@
     background: hsl(var(--section-peach));
   }
 
-  .bg-section-cream {
-    background: hsl(var(--section-cream));
-  }
-
   .glow-cta {
-    box-shadow: 0 0 20px hsl(var(--cta-glow) / 0.5), 0 0 40px hsl(var(--cta-glow) / 0.3);
+    box-shadow: 0 4px 15px hsl(var(--cta-glow) / 0.4);
   }
 
   .glow-cta-hover {
-    box-shadow: 0 0 30px hsl(var(--cta-glow) / 0.7), 0 0 60px hsl(var(--cta-glow) / 0.4);
+    box-shadow: 0 6px 25px hsl(var(--cta-glow) / 0.5);
   }
 
-  .text-gradient-warm {
-    background: linear-gradient(135deg, hsl(25 100% 45%), hsl(15 90% 50%));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-
-  /* Orange brush-stroke underline decoration for headings */
-  .text-highlight-underline {
-    position: relative;
-    display: inline-block;
-    color: hsl(var(--primary));
-    font-weight: 800;
-  }
-
-  .text-highlight-underline::after {
-    content: '';
-    position: absolute;
-    left: -4%;
-    right: -4%;
-    bottom: 2px;
-    height: 10px;
-    background: hsl(25 100% 50% / 0.3);
-    border-radius: 4px;
-    z-index: -1;
-    transform: skewX(-3deg);
+  /* Cyan highlight for headings - matching reference */
+  .text-cyan-highlight {
+    color: hsl(var(--cyan));
   }
 
   .shadow-warm {
@@ -149,7 +115,7 @@
   }
 
   .shadow-card {
-    box-shadow: 0 4px 20px hsl(20 30% 15% / 0.08);
+    box-shadow: 0 2px 12px hsl(20 30% 15% / 0.06);
   }
 
   .animate-pulse-slow {

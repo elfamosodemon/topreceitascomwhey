@@ -19,18 +19,18 @@ const badges = [
 ];
 
 const TrustBadgesSection = () => (
-  <section className="py-12 px-4 bg-section-peach">
-    <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+  <section className="py-12 px-4 bg-card">
+    <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
       {badges.map((badge) => (
         <div
           key={badge.title}
-          className="flex flex-col items-center text-center gap-3 p-6 rounded-2xl border border-border/50 bg-card shadow-card"
+          className="flex flex-col items-center text-center gap-3 p-5 rounded-xl bg-section-peach"
         >
-          <div className="w-14 h-14 rounded-full flex items-center justify-center gradient-hero">
-            <badge.icon className="w-7 h-7 text-primary-foreground" />
+          <div className="w-12 h-12 rounded-full flex items-center justify-center gradient-hero">
+            <badge.icon className="w-6 h-6 text-primary-foreground" />
           </div>
-          <h3 className="font-display font-bold text-lg text-foreground">{badge.title}</h3>
-          <p className="text-sm text-muted-foreground">{badge.subtitle}</p>
+          <h3 className="font-display font-bold text-base text-foreground">{badge.title}</h3>
+          <p className="text-xs text-muted-foreground">{badge.subtitle}</p>
         </div>
       ))}
     </div>

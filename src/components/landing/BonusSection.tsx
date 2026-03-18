@@ -4,39 +4,42 @@ import bonusPretreino from "@/assets/bonus-pretreino.jpg";
 import bonusGrupo from "@/assets/bonus-grupo.jpg";
 
 const bonuses = [
-  { img: bonusSalgadas, num: "#1", title: "+40 Receitas Salgadas", desc: "Receitas salgadas com whey para refeições completas" },
-  { img: bonusFamilia, num: "#2", title: "Doces para Família", desc: "Receitas que toda a família vai amar" },
-  { img: bonusPretreino, num: "#3", title: "Pré e Pós Treino", desc: "Receitas ideais para antes e depois do treino" },
-  { img: bonusGrupo, num: "#4", title: "Grupo VIP WhatsApp", desc: "Comunidade exclusiva com dicas e suporte" },
+  { img: bonusSalgadas, num: "BÔNUS #01", title: "+40 Receitas Salgadas com Whey", desc: "Pastinhas, crepiocas, quiches e muito mais para variar o cardápio" },
+  { img: bonusFamilia, num: "BÔNUS #02", title: "Doces Fit para Crianças e Família", desc: "Receitas que toda a família vai amar — sem culpa e sem bagunça" },
+  { img: bonusPretreino, num: "BÔNUS #03", title: "+35 Receitas Pré e Pós Treino", desc: "Maximize seus resultados dentro e fora da academia" },
+  { img: bonusGrupo, num: "BÔNUS #04", title: "Acesso ao Grupo VIP no WhatsApp", desc: "Suporte exclusivo, dicas diárias e comunidade ativa" },
 ];
 
 const BonusSection = () => (
-  <section className="py-16 px-4 bg-card">
-    <div className="max-w-5xl mx-auto">
-      <h2 className="text-3xl md:text-4xl font-display font-extrabold text-center text-foreground mb-2">
+  <section className="py-16 md:py-20 px-4 bg-section-peach">
+    <div className="max-w-3xl mx-auto">
+      <h2 className="text-3xl md:text-4xl font-display font-extrabold text-center text-foreground mb-1 uppercase">
         Você ainda leva
       </h2>
-      <h2 className="text-3xl md:text-4xl font-display font-extrabold text-center mb-10">
-        <span className="text-highlight-underline">tudo isso de graça</span>
+      <h2 className="text-3xl md:text-4xl font-display font-extrabold text-center text-cyan-highlight mb-3 uppercase">
+        tudo isso de graça
       </h2>
-      <div className="max-w-2xl mx-auto space-y-4">
+      <p className="text-center text-muted-foreground mb-10">
+        Bônus criados para fechar todas as lacunas da sua dieta
+      </p>
+      <div className="space-y-4">
         {bonuses.map((b) => (
           <div
             key={b.num}
-            className="bg-background rounded-xl p-5 shadow-card hover:shadow-warm transition-shadow duration-300 flex items-center gap-4 border border-border/50"
+            className="bg-card rounded-xl p-4 md:p-5 shadow-card flex items-center gap-4 md:gap-5"
           >
             <img
               src={b.img}
               alt={b.title}
-              className="w-16 h-16 rounded-xl object-cover flex-shrink-0"
+              className="w-20 h-20 md:w-24 md:h-24 rounded-xl object-cover flex-shrink-0"
               loading="lazy"
               decoding="async"
             />
             <div className="flex-1">
-              <div className="flex items-center gap-2">
-                <span className="text-primary font-bold text-sm">{b.num}</span>
-                <h3 className="font-display font-bold text-lg text-foreground">{b.title}</h3>
-              </div>
+              <span className="inline-block text-cyan-highlight text-[11px] font-bold tracking-wider uppercase mb-1">
+                {b.num}
+              </span>
+              <h3 className="font-display font-bold text-base md:text-lg text-foreground">{b.title}</h3>
               <p className="text-muted-foreground text-sm">{b.desc}</p>
             </div>
           </div>
