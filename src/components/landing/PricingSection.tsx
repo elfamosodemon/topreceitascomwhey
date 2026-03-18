@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Check, Star, Gift, Users } from "lucide-react";
 import UpsellModal from "./UpsellModal";
+import bandeirasPagamento from "@/assets/bandeiras-pagamento.webp";
 
 const PricingSection = () => {
   const [showUpsell, setShowUpsell] = useState(false);
@@ -89,6 +90,15 @@ const PricingSection = () => {
                 COMPRAR AGORA
               </button>
             </div>
+          </div>
+          <div className="mt-8 flex justify-center">
+            <img
+              src={bandeirasPagamento}
+              alt="Formas de pagamento: Pix, Visa, Mastercard, American Express, Elo, Hipercard, Diners Club e Boleto"
+              className="max-w-xs md:max-w-sm opacity-60"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
         </div>
       </section>
