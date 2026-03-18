@@ -10,7 +10,7 @@ const LandingFooter = () => (
         <a href="#" className="hover:text-primary-foreground transition-colors">Política de Privacidade</a>
       </div>
       <p className="text-primary-foreground/60 text-xs">
-        CNPJ: 62.173.620/0001-80
+        CNPJ: 65.101.592/0001-83
       </p>
       <p className="text-primary-foreground/50 text-xs mt-2">
         © 2026 Todos os direitos reservados
