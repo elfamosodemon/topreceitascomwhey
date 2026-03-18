@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Check, Star, Gift, Users } from "lucide-react";
 import UpsellModal from "./UpsellModal";
+import bandeirasPagamento from "@/assets/bandeiras-pagamento.webp";
 
 const PricingSection = () => {
   const [showUpsell, setShowUpsell] = useState(false);
