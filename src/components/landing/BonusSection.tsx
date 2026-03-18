@@ -1,10 +1,13 @@
-import { UtensilsCrossed, Users, Timer, MessageCircle } from "lucide-react";
+import bonusSalgadas from "@/assets/bonus-salgadas.jpg";
+import bonusFamilia from "@/assets/bonus-familia.jpg";
+import bonusPretreino from "@/assets/bonus-pretreino.jpg";
+import bonusGrupo from "@/assets/bonus-grupo.jpg";
 
 const bonuses = [
-  { icon: UtensilsCrossed, num: "#1", title: "+40 Receitas Salgadas", desc: "Receitas salgadas com whey para refeições completas" },
-  { icon: Users, num: "#2", title: "Doces para Família", desc: "Receitas que toda a família vai amar" },
-  { icon: Timer, num: "#3", title: "Pré e Pós Treino", desc: "Receitas ideais para antes e depois do treino" },
-  { icon: MessageCircle, num: "#4", title: "Grupo VIP WhatsApp", desc: "Comunidade exclusiva com dicas e suporte" },
+  { img: bonusSalgadas, num: "#1", title: "+40 Receitas Salgadas", desc: "Receitas salgadas com whey para refeições completas" },
+  { img: bonusFamilia, num: "#2", title: "Doces para Família", desc: "Receitas que toda a família vai amar" },
+  { img: bonusPretreino, num: "#3", title: "Pré e Pós Treino", desc: "Receitas ideais para antes e depois do treino" },
+  { img: bonusGrupo, num: "#4", title: "Grupo VIP WhatsApp", desc: "Comunidade exclusiva com dicas e suporte" },
 ];
 
 const BonusSection = () => (
@@ -22,9 +25,13 @@ const BonusSection = () => (
             key={b.num}
             className="bg-background rounded-xl p-5 shadow-card hover:shadow-warm transition-shadow duration-300 flex items-center gap-4 border border-border/50"
           >
-            <div className="w-12 h-12 rounded-full gradient-hero flex items-center justify-center flex-shrink-0">
-              <b.icon className="w-6 h-6 text-primary-foreground" />
-            </div>
+            <img
+              src={b.img}
+              alt={b.title}
+              className="w-16 h-16 rounded-xl object-cover flex-shrink-0"
+              loading="lazy"
+              decoding="async"
+            />
             <div className="flex-1">
               <div className="flex items-center gap-2">
                 <span className="text-primary font-bold text-sm">{b.num}</span>
