@@ -44,7 +44,7 @@ const PricingSection = () => {
               </ul>
               <div className="mb-6">
                 <span className="text-price-old line-through text-base">De R$97</span>
-                <p className="text-5xl font-display font-extrabold text-primary">R$18</p>
+                <p className="text-5xl font-display font-extrabold text-primary">R$ 19,90</p>
               </div>
               <button
                 onClick={() => setShowUpsell(true)}
@@ -106,8 +106,8 @@ const PricingSection = () => {
                 ))}
               </ul>
               <div className="mb-6">
-                <span className="text-price-old line-through text-base">De R$187</span>
-                <p className="text-5xl font-display font-extrabold text-primary">R$29</p>
+                <span className="text-price-old line-through text-base">De R$287</span>
+                <p className="text-5xl font-display font-extrabold text-primary">R$ 34,90</p>
               </div>
               <button
                 onClick={() => (window as any).redirectWithParams("https://www.ggcheckout.com/checkout/v5/yylOi2P7GKXl9ci6Anwz")}
