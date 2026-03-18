@@ -16,7 +16,6 @@ const PricingSection = () => {
           <div className="flex justify-center mb-10">
             <img src={bandeirasImg} alt="Formas de pagamento: Pix, Visa, Mastercard, American Express, Elo, Hipercard, Boleto" className="h-6 md:h-7 opacity-60" loading="lazy" decoding="async" />
           </div>
-          </h2>
           <div className="grid md:grid-cols-2 gap-6 items-start">
             {/* Starter */}
             <div className="bg-card rounded-2xl p-8 shadow-card border border-border">
