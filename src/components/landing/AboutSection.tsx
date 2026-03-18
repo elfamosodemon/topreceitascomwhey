@@ -7,7 +7,7 @@ const AboutSection = () => (
         <img
           src={camilaImg}
           alt="Camila Pereira, nutricionista e criadora do Doce Todo Dia, Shape Todo Ano"
-          className="rounded-full shadow-card w-44 h-44 md:w-56 md:h-56 object-cover mx-auto"
+          className="rounded-full shadow-card w-44 h-44 md:w-56 md:h-56 object-cover mx-auto ring-4 ring-primary ring-offset-4 ring-offset-muted"
           loading="lazy"
           decoding="async"
         />
