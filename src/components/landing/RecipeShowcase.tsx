@@ -6,53 +6,52 @@ import bombomImg from "@/assets/bombom.webp";
 import brigadeiroImg from "@/assets/brigadeiro.webp";
 
 const recipes = [
-  { name: "Brownie Proteico", kcal: 40, img: brownieImg },
-  { name: "Bolo de Caneca", kcal: 70, img: mugCakeImg },
-  { name: "Pudim de Chia e Coco", kcal: 98, img: pudimImg },
-  { name: "Cookies Integrais", kcal: 13, img: cookiesImg },
+  { name: "Brownie Proteico com Cacau", kcal: 40, img: brownieImg },
+  { name: "Bolo de Caneca com Banana", kcal: 70, img: mugCakeImg },
+  { name: "Pudim Fit de Coco", kcal: 98, img: pudimImg },
+  { name: "Cookies com Castanhas", kcal: 13, img: cookiesImg },
   { name: "Bombom de Whey", kcal: 47, img: bombomImg },
-  { name: "Barra Proteica de Whey", kcal: 12, img: brigadeiroImg },
+  { name: "Brigadeiro Proteico", kcal: 12, img: brigadeiroImg },
 ];
 
 const RecipeShowcase = () => (
-  <section className="py-16 px-4 bg-section-peach">
+  <section className="py-16 md:py-20 px-4 bg-section-peach">
     <div className="max-w-5xl mx-auto">
-      <h2 className="text-3xl md:text-4xl font-display font-extrabold text-center text-foreground mb-2">
+      <h2 className="text-3xl md:text-4xl font-display font-extrabold text-center text-foreground mb-1 uppercase">
         Veja o que você vai
       </h2>
-      <h2 className="text-3xl md:text-4xl font-display font-extrabold text-center mb-4">
-        <span className="text-highlight-underline">aprender a fazer</span>
+      <h2 className="text-3xl md:text-4xl font-display font-extrabold text-center text-cyan-highlight mb-4 uppercase">
+        aprender a fazer
       </h2>
       <p className="text-center text-muted-foreground mb-10">
-        Só algumas das <strong className="text-foreground">200 receitas</strong> que vão transformar sua dieta
+        Receitas para todos os momentos — sobremesa, lanche, pós-treino ou conforto emocional.
       </p>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {recipes.map((r) => (
           <div
             key={r.name}
-            className="bg-card rounded-xl overflow-hidden shadow-card hover:shadow-warm transition-all duration-300 hover:-translate-y-1"
+            className="bg-card rounded-xl overflow-hidden shadow-card hover:shadow-warm transition-all duration-300"
           >
             <div className="relative">
-              <img src={r.img} alt={r.name} className="w-full aspect-square object-cover" loading="lazy" decoding="async" />
-              <span className="absolute top-2 right-2 bg-badge-cal text-primary-foreground text-xs font-bold px-2.5 py-1 rounded-full">
+              <img src={r.img} alt={r.name} className="w-full aspect-[4/3] object-cover" loading="lazy" decoding="async" />
+              <span className="absolute top-2 right-2 text-primary-foreground text-xs font-bold px-2.5 py-1 rounded-full" style={{ background: 'hsl(25 100% 50%)' }}>
                 🔥 {r.kcal} kcal
               </span>
             </div>
-            <div className="p-3 text-center">
-              <h3 className="font-display font-bold text-foreground text-sm md:text-base">{r.name}</h3>
+            <div className="p-3">
+              <h3 className="font-display font-bold text-foreground text-sm">{r.name}</h3>
             </div>
           </div>
         ))}
       </div>
 
       <div className="text-center mt-10">
-        <p className="text-muted-foreground mb-4">...e muito mais!</p>
         <a
           href="#precos"
-          className="inline-block gradient-cta text-accent-foreground font-bold text-lg px-8 py-3 rounded-full glow-cta hover:glow-cta-hover transition-all duration-300"
+          className="inline-block gradient-cta text-primary-foreground font-bold text-base px-8 py-3.5 rounded-full glow-cta hover:glow-cta-hover transition-all duration-300 uppercase tracking-wide"
         >
-          QUERO AS RECEITAS
+          QUERO AS RECEITAS →
         </a>
       </div>
     </div>

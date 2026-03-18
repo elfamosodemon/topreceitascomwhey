@@ -8,94 +8,120 @@ const PricingSection = () => {
 
   return (
     <>
-      <section id="precos" className="py-16 px-4 bg-section-peach">
+      <section id="precos" className="py-16 md:py-20 px-4 bg-section-peach">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-display font-extrabold text-center text-foreground mb-2">
+          <h2 className="text-3xl md:text-4xl font-display font-extrabold text-center text-foreground mb-1 uppercase">
             Escolha seu
           </h2>
-          <h2 className="text-3xl md:text-4xl font-display font-extrabold text-center mb-12">
-            <span className="text-highlight-underline">plano</span>
+          <h2 className="text-3xl md:text-4xl font-display font-extrabold text-center text-cyan-highlight mb-12 uppercase">
+            plano
           </h2>
           <div className="grid md:grid-cols-2 gap-6 items-start">
-            {/* Essencial */}
-            <div className="bg-card rounded-2xl p-8 shadow-card border border-border">
-              <h3 className="font-display font-bold text-2xl text-foreground mb-1">Plano Essencial</h3>
-              <p className="text-muted-foreground text-sm mb-6 italic">
-                "Pra quem quer bater a meta de proteína sem sofrer."
+            {/* Starter / Essencial */}
+            <div className="bg-card rounded-2xl p-7 md:p-8 shadow-card border border-border">
+              <span className="inline-block text-xs font-bold text-muted-foreground border border-border rounded px-3 py-1 mb-4 uppercase tracking-wider">
+                Starter
+              </span>
+              <h3 className="font-display font-extrabold text-2xl text-foreground mb-1 uppercase">
+                Kit Doces Fit com Whey
+              </h3>
+              <p className="text-muted-foreground text-sm mb-6">
+                Para quem quer começar agora
               </p>
-              <div className="mb-6">
-                <span className="text-price-old line-through text-lg">R$ 97</span>
-                <p className="text-5xl font-display font-extrabold text-price-new">R$ 19,90</p>
-              </div>
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-3 mb-6">
                 {[
-                  "200 Receitas com Whey: O guia completo de doces e sobremesas",
-                  "Macros Calculados: Saiba exatamente o que está comendo",
-                  "Acesso Vitalício: O material é seu para sempre",
-                  "Entrega no Zap e E-mail: Receba em segundos após o Pix",
+                  "200 Receitas Fit com Whey",
+                  "Tabela de calorias e macros",
+                  "Modo de preparo detalhado com fotos",
+                  "Suporte + Garantia 7 dias",
+                  "Acesso vitalício",
                 ].map((item) => (
-                  <li key={item} className="flex items-start gap-2 text-sm text-foreground">
-                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                  <li key={item} className="flex items-start gap-2.5 text-sm text-foreground">
+                    <Check className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'hsl(142 70% 42%)' }} />
                     {item}
                   </li>
                 ))}
               </ul>
+              <div className="mb-6">
+                <span className="text-muted-foreground line-through text-sm">De R$97</span>
+                <p className="text-4xl font-display font-extrabold text-primary">R$19,90</p>
+              </div>
               <button
                 onClick={() => setShowUpsell(true)}
-                className="block w-full text-center gradient-cta text-accent-foreground font-bold py-3 rounded-full glow-cta hover:glow-cta-hover transition-all duration-300"
+                className="block w-full text-center font-bold py-3.5 rounded-full border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 uppercase tracking-wide"
               >
                 COMPRAR AGORA
               </button>
+              <div className="flex items-center justify-center gap-3 mt-3 text-[11px] text-muted-foreground">
+                <span>🔒 Pagamento seguro</span>
+                <span>✅ Garantia 7 dias</span>
+              </div>
             </div>
-            {/* Combo Shape Gourmet */}
-            <div className="bg-card rounded-2xl p-8 shadow-warm border-2 border-primary relative">
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2 gradient-hero text-primary-foreground text-xs font-bold px-4 py-1.5 rounded-full flex items-center gap-1">
-                <Star className="w-3.5 h-3.5" /> 95% ESCOLHEM ESTE
+
+            {/* Premium / Combo */}
+            <div className="bg-card rounded-2xl p-7 md:p-8 shadow-warm border-2 border-primary relative">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 gradient-hero text-primary-foreground text-xs font-bold px-4 py-1.5 rounded-full flex items-center gap-1.5 whitespace-nowrap">
+                <Star className="w-3.5 h-3.5" /> MAIS ESCOLHIDO
               </div>
-              <h3 className="font-display font-bold text-2xl text-foreground mb-1">Combo Shape Gourmet</h3>
-              <p className="text-muted-foreground text-sm mb-6 italic">
-                "O protocolo completo para nunca mais errar na dieta."
+              <span className="inline-block text-xs font-bold text-primary-foreground rounded px-3 py-1 mb-4 uppercase tracking-wider gradient-hero">
+                Premium
+              </span>
+              <h3 className="font-display font-extrabold text-2xl text-foreground mb-1 uppercase">
+                Doce & Fit Premium
+              </h3>
+              <p className="text-muted-foreground text-sm mb-6">
+                O sistema completo de alimentação fitness
               </p>
-              <div className="mb-6">
-                <span className="text-price-old line-through text-lg">R$ 287</span>
-                <p className="text-5xl font-display font-extrabold text-price-new">R$ 34,90</p>
-                <p className="text-xs text-muted-foreground mt-1">Menos que um lanche do iFood</p>
-              </div>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-start gap-2 text-sm text-foreground font-semibold">
-                  <Star className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                  Tudo do Plano Essencial
-                </li>
+              <ul className="space-y-3 mb-6">
                 {[
-                  "+40 Receitas Salgadas com Whey (Pastinhas, quiches e crepiocas)",
-                  "+35 Receitas de Pré e Pós-treino (Mais energia e pump)",
-                  "Guia de Receitas para a Família (Até as crianças vão amar)",
-                  "+30 Delícias Inéditas para Air Fryer",
-                  "Sobremesas Proteicas Internacionais",
+                  "200 Receitas Fit com Whey",
+                  "Tabela de calorias e macros",
+                  "Modo de preparo detalhado com fotos",
+                  "Suporte + Garantia 7 dias",
+                  "Acesso vitalício",
+                  "+30 Receitas Inéditas para Air Fryer",
+                  "+5 Sobremesas Proteicas Internacionais",
                 ].map((item) => (
-                  <li key={item} className="flex items-start gap-2 text-sm text-foreground">
-                    <Gift className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <li key={item} className="flex items-start gap-2.5 text-sm text-foreground">
+                    <Check className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'hsl(142 70% 42%)' }} />
                     {item}
                   </li>
                 ))}
-                <li className="flex items-start gap-2 text-sm text-foreground">
-                  <Users className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                  Acesso imediato à Área de Membros Premium e Grupo VIP (Tudo isso por menos de R$ 0,12 por receita!)
-                </li>
+                {[
+                  "+35 Receitas Pré e Pós Treino",
+                  "+40 Receitas Salgadas com Whey",
+                  "Doces Fit para Crianças e Família",
+                  "Acesso ao Grupo VIP no WhatsApp",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-2.5 text-sm text-foreground">
+                    <Check className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'hsl(142 70% 42%)' }} />
+                    <span className="flex items-center gap-1.5">
+                      🎁 {item}
+                    </span>
+                  </li>
+                ))}
               </ul>
+              <div className="mb-6">
+                <span className="text-muted-foreground line-through text-sm">De R$187</span>
+                <p className="text-4xl font-display font-extrabold text-primary">R$34,90</p>
+              </div>
               <button
                 onClick={() => (window as any).redirectWithParams("https://www.ggcheckout.com/checkout/v5/yylOi2P7GKXl9ci6Anwz")}
-                className="block w-full text-center gradient-cta text-accent-foreground font-bold py-3 rounded-full glow-cta hover:glow-cta-hover transition-all duration-300"
+                className="block w-full text-center gradient-cta text-primary-foreground font-bold py-3.5 rounded-full glow-cta hover:glow-cta-hover transition-all duration-300 uppercase tracking-wide"
               >
                 COMPRAR AGORA
               </button>
+              <div className="flex items-center justify-center gap-3 mt-3 text-[11px] text-muted-foreground">
+                <span>🔒 Pagamento seguro</span>
+                <span>✅ Garantia 7 dias</span>
+              </div>
             </div>
           </div>
           <div className="mt-8 flex justify-center">
             <img
               src={bandeirasPagamento}
               alt="Formas de pagamento: Pix, Visa, Mastercard, American Express, Elo, Hipercard, Diners Club e Boleto"
-              className="max-w-xs md:max-w-sm opacity-60"
+              className="max-w-xs md:max-w-sm opacity-50"
               loading="lazy"
               decoding="async"
             />
