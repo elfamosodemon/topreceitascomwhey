@@ -1,20 +1,23 @@
 import camilaImg from "@/assets/camila-pereira.webp";
 
 const AboutSection = () => (
-  <section className="py-16 px-4 bg-muted">
+  <section className="py-16 px-4 bg-card">
     <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
       <div className="w-full md:w-5/12 flex-shrink-0">
         <img
           src={camilaImg}
           alt="Camila Pereira, nutricionista e criadora do Doce Todo Dia, Shape Todo Ano"
-          className="rounded-full shadow-card w-44 h-44 md:w-56 md:h-56 object-cover mx-auto"
+          className="rounded-full shadow-card w-44 h-44 md:w-56 md:h-56 object-cover mx-auto border-4 border-primary/20"
           loading="lazy"
           decoding="async"
         />
       </div>
       <div className="w-full md:w-7/12">
-        <h2 className="text-3xl md:text-4xl font-display font-extrabold text-gradient-warm mb-2">
-          Muito prazer, sou Camila Pereira
+        <h2 className="text-3xl md:text-4xl font-display font-extrabold text-foreground mb-1">
+          Muito prazer, sou
+        </h2>
+        <h2 className="text-3xl md:text-4xl font-display font-extrabold mb-2">
+          <span className="text-highlight-underline">Camila Pereira</span>
         </h2>
         <p className="text-primary font-semibold text-lg mb-6">
           Nutricionista e Criadora do "Doce Todo Dia, Shape Todo Ano"

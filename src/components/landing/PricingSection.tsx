@@ -7,10 +7,13 @@ const PricingSection = () => {
 
   return (
     <>
-      <section id="precos" className="py-16 px-4 gradient-warm">
+      <section id="precos" className="py-16 px-4 bg-section-peach">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-display font-extrabold text-center text-gradient-warm mb-12">
-            Escolha seu plano
+          <h2 className="text-3xl md:text-4xl font-display font-extrabold text-center text-foreground mb-2">
+            Escolha seu
+          </h2>
+          <h2 className="text-3xl md:text-4xl font-display font-extrabold text-center mb-12">
+            <span className="text-highlight-underline">plano</span>
           </h2>
           <div className="grid md:grid-cols-2 gap-6 items-start">
             {/* Essencial */}

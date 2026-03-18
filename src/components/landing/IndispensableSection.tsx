@@ -1,10 +1,13 @@
 import indispensableImg from "@/assets/indispensable-new.webp";
 
 const IndispensableSection = () => (
-  <section className="py-16 px-4 bg-card">
+  <section className="py-16 px-4 bg-section-peach">
     <div className="max-w-4xl mx-auto text-center">
-      <h2 className="text-3xl md:text-4xl font-display font-extrabold text-gradient-warm mb-6">
-        O que torna esse livro indispensável na sua rotina fitness?
+      <h2 className="text-3xl md:text-4xl font-display font-extrabold mb-2 text-foreground">
+        O que torna esse livro
+      </h2>
+      <h2 className="text-3xl md:text-4xl font-display font-extrabold mb-8">
+        <span className="text-highlight-underline">indispensável na sua rotina fitness?</span>
       </h2>
       <img
         src={indispensableImg}
