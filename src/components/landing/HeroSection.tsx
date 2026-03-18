@@ -56,14 +56,9 @@ const HeroSection = () => (
               <p className="text-primary-foreground/80 text-xs">
                 Nutricionista · 11 mil seguidores
               </p>
-              <a
-                href="https://www.instagram.com/receitasfitcomwhey"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 text-primary-foreground/90 text-xs hover:text-primary-foreground transition-colors"
-              >
+              <span className="inline-flex items-center gap-1 text-primary-foreground/90 text-xs">
                 <Instagram className="w-3 h-3" /> @receitasfitcomwhey
-              </a>
+              </span>
             </div>
           </div>
           <div className="flex items-center gap-1">
