@@ -36,23 +36,21 @@
 
     --radius: 0.75rem;
 
-    --cta-glow: 25 100% 50%;
+    --cta-glow: 142 70% 42%;
     --urgency: 25 100% 55%;
-    --price-old: 0 0% 50%;
-    --price-new: 25 100% 50%;
+    --price-old: 0 60% 50%;
+    --price-new: 142 70% 35%;
     --badge-cal: 25 90% 50%;
     --bonus-bg: 30 60% 95%;
     --highlight: 45 100% 60%;
-    --cyan: 180 100% 45%;
-
-    --section-peach: 25 80% 94%;
 
     --font-display: 'Baloo 2', cursive;
     --font-body: 'Poppins', sans-serif;
 
-    --gradient-hero: linear-gradient(135deg, hsl(25 100% 55%), hsl(30 100% 50%));
-    --gradient-hero-bg: linear-gradient(180deg, hsl(25 100% 52%), hsl(28 100% 48%));
-    --gradient-cta: linear-gradient(135deg, hsl(25 100% 55%), hsl(30 100% 48%));
+    --gradient-hero: linear-gradient(135deg, hsl(25 100% 55%), hsl(35 100% 60%));
+    --gradient-warm: linear-gradient(180deg, hsl(30 100% 97%), hsl(25 80% 92%));
+    --gradient-cta: linear-gradient(135deg, hsl(142 70% 42%), hsl(142 80% 35%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(30 40% 97%));
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -85,29 +83,27 @@
     background: var(--gradient-hero);
   }
 
-  .gradient-hero-bg {
-    background: var(--gradient-hero-bg);
+  .gradient-warm {
+    background: var(--gradient-warm);
   }
 
   .gradient-cta {
     background: var(--gradient-cta);
   }
 
-  .bg-section-peach {
-    background: hsl(var(--section-peach));
-  }
-
   .glow-cta {
-    box-shadow: 0 4px 15px hsl(var(--cta-glow) / 0.4);
+    box-shadow: 0 0 20px hsl(var(--cta-glow) / 0.5), 0 0 40px hsl(var(--cta-glow) / 0.3);
   }
 
   .glow-cta-hover {
-    box-shadow: 0 6px 25px hsl(var(--cta-glow) / 0.5);
+    box-shadow: 0 0 30px hsl(var(--cta-glow) / 0.7), 0 0 60px hsl(var(--cta-glow) / 0.4);
   }
 
-  /* Cyan highlight for headings - matching reference */
-  .text-cyan-highlight {
-    color: hsl(var(--cyan));
+  .text-gradient-warm {
+    background: linear-gradient(135deg, hsl(25 100% 45%), hsl(15 90% 50%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
   .shadow-warm {
@@ -115,7 +111,7 @@
   }
 
   .shadow-card {
-    box-shadow: 0 2px 12px hsl(20 30% 15% / 0.06);
+    box-shadow: 0 4px 20px hsl(20 30% 15% / 0.08);
   }
 
   .animate-pulse-slow {
@@ -134,14 +130,5 @@
 
   .animate-bounce-subtle {
     animation: bounce-subtle 2s ease-in-out infinite;
-  }
-
-  @keyframes scale-in {
-    0% { transform: scale(0.95); opacity: 0; }
-    100% { transform: scale(1); opacity: 1; }
-  }
-
-  .animate-scale-in {
-    animation: scale-in 0.3s ease-out forwards;
   }
 }

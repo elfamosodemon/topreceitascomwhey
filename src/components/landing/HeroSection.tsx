@@ -1,22 +1,34 @@
 import heroGirl from "@/assets/hero-girl-new.webp";
-import camilaImg from "@/assets/camila-pereira.webp";
 
 const HeroSection = () => (
-  <section className="gradient-hero-bg relative overflow-hidden">
-    {/* Main hero */}
-    <div className="pt-12 pb-8 md:pt-20 md:pb-12 px-4">
-      <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
-        <h1 className="text-3xl md:text-5xl font-display font-extrabold leading-tight mb-4 text-primary-foreground uppercase">
+  <section className="py-16 md:py-24 px-4" style={{ background: '#FFFBF0' }}>
+    <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-16">
+      {/* Text content */}
+      <div className="flex-1 text-center md:text-left">
+        <h1 className="text-3xl md:text-5xl font-display font-extrabold leading-tight mb-5" style={{ color: '#1A1A1A' }}>
           Doce Todo Dia, Shape Todo Ano:{" "}
-          <span className="block mt-1">200 Opções Fit com Whey</span>{" "}
-          que Matam a Vontade de Açúcar.
+          <span className="text-gradient-warm">200 Opções Fit com Whey</span> que Matam a Vontade de Açúcar.
         </h1>
-        <p className="text-base md:text-lg mb-8 max-w-xl text-primary-foreground/80">
+        <p className="text-lg md:text-xl mb-8 max-w-xl" style={{ color: '#444' }}>
           Doces saudáveis, saborosos e fáceis de fazer — sem abrir mão da dieta!
         </p>
+        <div className="mb-6">
+          <span className="line-through text-lg" style={{ color: '#999' }}>De R$ 97</span>
+          <span className="text-lg ml-2" style={{ color: '#1A1A1A' }}>por apenas</span>
+          <p className="text-5xl md:text-6xl font-display font-extrabold mt-1" style={{ color: '#1A1A1A' }}>
+            R$ 19,90
+          </p>
+        </div>
+      </div>
 
-        {/* Hero image */}
-        <div className="w-52 md:w-72 rounded-2xl overflow-hidden mb-8" style={{ boxShadow: '0 20px 50px rgba(0,0,0,0.25)' }}>
+      {/* Hero image + CTA below */}
+      <div className="flex-shrink-0 flex flex-col items-center gap-6">
+        <div
+          className="w-72 md:w-96 rounded-2xl overflow-hidden"
+          style={{
+            boxShadow: '0 20px 60px rgba(0,0,0,0.15), 0 8px 20px rgba(0,0,0,0.1)',
+          }}
+        >
           <img
             src={heroGirl}
             alt="200 Receitas Fit com Whey - Livro e panquecas proteicas"
@@ -26,32 +38,16 @@ const HeroSection = () => (
             decoding="async"
           />
         </div>
-
-        {/* Author badge */}
-        <div className="bg-card/95 backdrop-blur rounded-xl px-5 py-3 flex items-center gap-3 mb-6 shadow-card">
-          <img src={camilaImg} alt="Camila Pereira" className="w-11 h-11 rounded-full object-cover" loading="eager" />
-          <div className="text-left">
-            <p className="font-bold text-foreground text-sm">Camila Pereira</p>
-            <p className="text-muted-foreground text-xs">Nutricionista · +40 mil seguidores</p>
-            <span className="inline-block mt-0.5 text-[10px] font-bold text-accent-foreground px-2 py-0.5 rounded-full" style={{ background: 'hsl(142 70% 42%)' }}>
-              ✓ Criadora do e-book original desde 2024
-            </span>
-          </div>
-        </div>
-
-        {/* Stats bar */}
-        <div className="bg-card rounded-xl shadow-card flex divide-x divide-border mb-6 overflow-hidden">
-          {[
-            { value: "14.800+", label: "COMPRADORES" },
-            { value: "200", label: "RECEITAS" },
-            { value: "7 DIAS", label: "GARANTIA" },
-          ].map((s) => (
-            <div key={s.label} className="px-5 md:px-8 py-3 text-center">
-              <p className="font-display font-extrabold text-primary text-lg md:text-xl">{s.value}</p>
-              <p className="text-muted-foreground text-[10px] md:text-xs font-medium tracking-wide uppercase">{s.label}</p>
-            </div>
-          ))}
-        </div>
+        <a
+          href="#precos"
+          className="inline-block text-accent-foreground font-bold text-lg md:text-xl px-10 py-4 rounded-full transition-all duration-300 animate-bounce-subtle"
+          style={{
+            background: 'linear-gradient(135deg, #10B981, #059669)',
+            boxShadow: '0 8px 25px rgba(16, 185, 129, 0.4)',
+          }}
+        >
+          QUERO AS RECEITAS
+        </a>
       </div>
     </div>
   </section>
